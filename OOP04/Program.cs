@@ -86,8 +86,36 @@ namespace OOP04
             //    Salary = 50000
             //}; 
 
-           
+
             #endregion
+
+            #endregion
+
+            #region deep & shallow copy
+            /// shallow copy
+            //int[] Arr01 = [1, 2, 3];
+            //int[] Arr02 = [4, 5, 6];
+            //Console.WriteLine($"Arra01 : {Arr01.GetHashCode()}");
+            //Console.WriteLine($"Arra02 : {Arr02.GetHashCode()}");
+            //Arr01 = Arr02; // Shallow copy
+            //Console.WriteLine("After shallow copy:");
+            //Console.WriteLine($"Arra01 : {Arr01.GetHashCode()}");
+            //Console.WriteLine($"Arra02 : {Arr02.GetHashCode()}");
+            //Arr01[0] = 100; // Modifying Arr02
+            //Console.WriteLine(Arr02[0]);
+
+            //deep copy
+           // int[] Arr01 = [1, 2, 3];
+           // int[] Arr02 = [4, 5, 6];
+           // Console.WriteLine($"Arra01 : {Arr01.GetHashCode()}");
+           // Console.WriteLine($"Arra02 : {Arr02.GetHashCode()}");
+
+           // Arr02= (int[])Arr01.Clone(); // Deep copy using Clone method
+           // Console.WriteLine("After deep copy:");
+           // Console.WriteLine($"Arra01 : {Arr01.GetHashCode()}");
+           // Console.WriteLine($"Arra02 : {Arr02.GetHashCode()}");
+           // Arr02[0] = 100; // Modifying Arr02
+           //Console.WriteLine(Arr01[0]); // Outputs: 1, since Arr01 is unchanged
 
             #endregion
         }
