@@ -33,6 +33,14 @@
             //Console.WriteLine(difference);
 
             #endregion
+            #region Q4 - Employee and Manager
+            //Employee emp = new Employee();
+            //emp.Work();
+
+            //Manager mgr = new Manager();
+            //mgr.Work();
+            #endregion
+
         }
     }
 }
