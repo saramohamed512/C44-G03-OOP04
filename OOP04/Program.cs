@@ -1,4 +1,8 @@
 ﻿using OOP04.PolyMorphismOverriding;
+using OOP04.OperatorOverloading;
+
+using System.Numerics;
+using Complex = OOP04.OperatorOverloading.Complex;
 
 namespace OOP04
 {
@@ -27,11 +31,31 @@ namespace OOP04
             //Console.WriteLine(Sum(10.5, 20.5)); // Calls the double version
             //Console.WriteLine(Sum(10.5, 20.5, 30.5)); // Calls the double version with three parameters
             #endregion
-            #region overriding
-            TypeB typeB = new TypeB(10, 20);
-            typeB.Func01(); // Calls the Func01 method of TypeB
-            typeB.Func02(); // Calls the Func02 method of TypeB
+            #region  method Overloading
+            //TypeB typeB = new TypeB(10, 20);
+            //typeB.Func01(); // Calls the Func01 method of TypeB
+            //typeB.Func02(); // Calls the Func02 method of TypeB
 
+            #endregion
+            #region operator Overloading
+            Complex C1 = new Complex() { Real = 10, Imag = 20 };
+            Complex C2 = new Complex() { Real = 30, Imag = 40 };
+            Complex C3 = default;
+            //C3 = C1 + C2; // Uses the overloaded + operator
+            //C3 = C1 - C2; // Uses the overloaded - operator
+            //Console.WriteLine(C1);
+            //C1++;
+            //Console.WriteLine(C1);
+            //Console.WriteLine(C2);
+            //Console.WriteLine("----------------");
+            //Console.WriteLine(C3); // Outputs: 40 + 60i
+            if (C1 > C2)
+            {
+                Console.WriteLine($"{C1} is greater than {C2}");
+            }
+            else { 
+                Console.WriteLine($"{C1} is not greater than {C2}");
+            }
             #endregion
             #endregion
         }
