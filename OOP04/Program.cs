@@ -78,6 +78,17 @@ namespace OOP04
             //Parent parent = new Parent();
             //parent.Print();
             #endregion
+            #region partial class
+            //Employee employee = new Employee() {
+            //    ID = 1,
+            //    Name = "John Doe",
+            //    Age = 30,
+            //    Salary = 50000
+            //}; 
+
+           
+            #endregion
+
             #endregion
         }
     }
