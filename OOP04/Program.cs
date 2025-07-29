@@ -9,7 +9,7 @@ namespace OOP04
     internal class Program
     {
         #region MethodOverloading
-        public static int Sum(int X , int Y)
+        public static int Sum(int X, int Y)
         {
             return X + Y;
         }
@@ -38,9 +38,9 @@ namespace OOP04
 
             #endregion
             #region operator Overloading
-            Complex C1 = new Complex() { Real = 10, Imag = 20 };
-            Complex C2 = new Complex() { Real = 30, Imag = 40 };
-            Complex C3 = default;
+            //Complex C1 = new Complex() { Real = 10, Imag = 20 };
+            //Complex C2 = new Complex() { Real = 30, Imag = 40 };
+            //Complex C3 = default;
             //C3 = C1 + C2; // Uses the overloaded + operator
             //C3 = C1 - C2; // Uses the overloaded - operator
             //Console.WriteLine(C1);
@@ -49,13 +49,21 @@ namespace OOP04
             //Console.WriteLine(C2);
             //Console.WriteLine("----------------");
             //Console.WriteLine(C3); // Outputs: 40 + 60i
-            if (C1 > C2)
-            {
-                Console.WriteLine($"{C1} is greater than {C2}");
-            }
-            else { 
-                Console.WriteLine($"{C1} is not greater than {C2}");
-            }
+            //if (C1 > C2)
+            //{
+            //    Console.WriteLine($"{C1} is greater than {C2}");
+            //}
+            //else { 
+            //    Console.WriteLine($"{C1} is not greater than {C2}");
+            //}
+            #endregion
+            #region casting operator Overloading
+            Complex C1 = new Complex() { Real = 10, Imag = 20 };
+            Complex C2 = new Complex() { Real = 30, Imag = 40 };
+            int Y = (int)C1; // Uses the overloaded implicit operator
+            Console.WriteLine(Y); // Outputs: 10
+            string str = (string)C1; // Uses the overloaded implicit operator
+            Console.WriteLine(str); // Outputs: 10 + 20i
             #endregion
             #endregion
         }
