@@ -71,8 +71,12 @@ namespace OOP04
             #region Static Class
             //Helper h1 = new Helper(10, 20);
             //Console.WriteLine( h1.CmToInch(254));
-            Console.WriteLine(Helper.CmToInch(254)); // Static method call
-            Console.WriteLine(Helper.CalacCircleArea(10)); // Static method call
+            //Console.WriteLine(Helper.CmToInch(254)); // Static method call
+            //Console.WriteLine(Helper.CalacCircleArea(10)); // Static method call
+            #endregion
+            #region Sealed Class
+            //Parent parent = new Parent();
+            //parent.Print();
             #endregion
             #endregion
         }
