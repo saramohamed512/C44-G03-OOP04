@@ -43,5 +43,30 @@ namespace assignment04
             return Hours.GetHashCode() ^ Minutes.GetHashCode() ^ Seconds.GetHashCode();
         }
         #endregion
+        #region Constructors
+        private void FromTotalSeconds(int totalSeconds)
+        {
+            Hours = totalSeconds / 3600;
+            int remaining = totalSeconds % 3600;
+            Minutes = remaining / 60;
+            Seconds = remaining % 60;
+        }
+        private void NormalizeTime(int hours, int minutes, int seconds)
+        {
+            int totalSeconds = hours * 3600 + minutes * 60 + seconds;
+            FromTotalSeconds(totalSeconds);
+        }
+    
+        public Duration(int hours, int minutes, int seconds)
+        {
+            NormalizeTime(hours, minutes, seconds);
+        }
+
+      
+        public Duration(int totalSeconds)
+        {
+            FromTotalSeconds(totalSeconds);
+        }
+        #endregion
     }
 }
