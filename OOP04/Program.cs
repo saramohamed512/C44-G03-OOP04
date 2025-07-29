@@ -58,12 +58,21 @@ namespace OOP04
             //}
             #endregion
             #region casting operator Overloading
-            Complex C1 = new Complex() { Real = 10, Imag = 20 };
-            Complex C2 = new Complex() { Real = 30, Imag = 40 };
-            int Y = (int)C1; // Uses the overloaded implicit operator
-            Console.WriteLine(Y); // Outputs: 10
-            string str = (string)C1; // Uses the overloaded implicit operator
-            Console.WriteLine(str); // Outputs: 10 + 20i
+            //Complex C1 = new Complex() { Real = 10, Imag = 20 };
+            //Complex C2 = new Complex() { Real = 30, Imag = 40 };
+            //int Y = (int)C1; // Uses the overloaded implicit operator
+            //Console.WriteLine(Y); // Outputs: 10
+            //string str = (string)C1; // Uses the overloaded implicit operator
+            //Console.WriteLine(str); // Outputs: 10 + 20i
+            #endregion
+            #endregion
+
+            #region Class
+            #region Static Class
+            //Helper h1 = new Helper(10, 20);
+            //Console.WriteLine( h1.CmToInch(254));
+            Console.WriteLine(Helper.CmToInch(254)); // Static method call
+            Console.WriteLine(Helper.CalacCircleArea(10)); // Static method call
             #endregion
             #endregion
         }
