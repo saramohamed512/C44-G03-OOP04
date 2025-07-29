@@ -40,6 +40,18 @@
             //Manager mgr = new Manager();
             //mgr.Work();
             #endregion
+            #region Q5 - Base and Derived Classes
+          
+            //BaseClass obj1 = new DerivedClass1();  
+            //obj1.DisplayMessage();
+
+           
+            //BaseClass obj2 = new DerivedClass2();
+            //obj2.DisplayMessage(); 
+
+            //DerivedClass2 obj3 = new DerivedClass2();
+            //obj3.DisplayMessage(); 
+            #endregion
 
         }
     }
