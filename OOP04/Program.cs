@@ -1,4 +1,6 @@
-﻿namespace OOP04
+﻿using OOP04.PolyMorphismOverriding;
+
+namespace OOP04
 {
     internal class Program
     {
@@ -21,9 +23,15 @@
         {
             #region polymerphism
             #region overloading
-            Console.WriteLine(Sum(10, 20)); // Calls the int version
-            Console.WriteLine(Sum(10.5, 20.5)); // Calls the double version
-            Console.WriteLine(Sum(10.5, 20.5, 30.5)); // Calls the double version with three parameters
+            //Console.WriteLine(Sum(10, 20)); // Calls the int version
+            //Console.WriteLine(Sum(10.5, 20.5)); // Calls the double version
+            //Console.WriteLine(Sum(10.5, 20.5, 30.5)); // Calls the double version with three parameters
+            #endregion
+            #region overriding
+            TypeB typeB = new TypeB(10, 20);
+            typeB.Func01(); // Calls the Func01 method of TypeB
+            typeB.Func02(); // Calls the Func02 method of TypeB
+
             #endregion
             #endregion
         }
